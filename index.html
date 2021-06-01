@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nwors</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190448044-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-190448044-1');
-</script>
-
 </head>
 
 <body>
   <header>
-    <h1>Nwors</h1>
-    <img src="img/1613887667554.jpg">
+    <div class="header-inner">
+      <h1 class="site-title">Nwors</h1>
+      <nav class="header-nav" id="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-items" href="index.html">Top</a></li>
+          <li class="nav-item"><a class="nav-items" href="#service">Service</a></li>
+          <li class="nav-item"><a class="nav-items" href="#points">Point</a></li>
+          <!-- <li class="nav-item"><a class="nav-items" href="#contact">Contact</a></li> -->
+        </ul>
+      </nav>
+      <a class="burger-btn" id="burger-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+    </div>
   </header>
+
+  
   <main>
-    <div class="service">
-      <h1>SERVICE</h1>
-      <h2>インフルエンサーマーケティング</h2>
-      <p>インフルエンサーマーケティングとは、企業が直接消費者に対してメッセージを発信する従来型のマーケティングよりも効果的に商品やブランドに対する認知や購買意欲の向上を実現することができる手法です。</p>
-      <p>弊社ではInstagramやYouTubeなどSNSをはじめとした各種メディアにおいて強い影響力を持つ「インフルエンサー」に企業の製品やサービスを最高の形で紹介できるようにサポートし、多くのファン（消費者）へ認知させたり購買行動に影響を与えられるようにお手伝いさせていただくサービスを行っております。</p>
+    <div class="fv">
+      <img src="img/Nwors1.jpg" alt="top-img">
     </div>
-    <div class="point">
-      <h1>POINT</h1>
-      <h2>Nwors(ノワーズ)の3つの特徴</h2>
-      <ul>
-        <li>信頼性</li>
-        <p>・弊社では「インフルエンサー」との信頼性を重視するため、必要に応じて売り上げの分かる管理画面をご用意しております。</p>
-        <li>充実なサポート</li>
-        <p>・マンツーマン担当制となっており投稿の準備やご不明点等いつでもサポートが受けられますので、初めての方でもご安心して始められます。</p>
-        <li>満足のいく料金設定</li>
-        <p>・弊社ではできるだけ高単価でご案内ができるよう弊社の利益を少なくし、「インフルエンサー」を第一に考え満足のいく金額をご提供させて致きます。</p>
+
+    <section>
+      <h2 class="section-title">Concept</h2>
+      <p class="concept-title">関わる全ての人のベストパートナーへ<br>『インフルエンサー』に優しい会社に</p>
+    </section>
+  
+    <section id="service">
+      <h2 class="section-title">SERVICE</h2>
+      <div class="service">
+        <h3 class="service-title">インフルエンサーマーケティング</h3>
+        <p class="service-text">インフルエンサーマーケティングとは、企業が直接消費者に対してメッセージを発信する従来型のマーケティングよりも効果的に商品やブランドに対する認知や購買意欲の向上を実現することが出来る手法です。<br>弊社ではInstagramやYouTubeなどSNSをはじめとした各種メディアにおいて強い影響力を持つ「インフルエンサー」に企業の製品やサービスを最高の形で紹介できるようにサポートし、多くのファン（消費者）へ認知させたり購買意欲に影響を与えられるようにお手伝いさせて頂くサービスを行っております。
+        </p>
+      </div>
+
+    </section>
+
+    <section id="points">
+      <h2 class="section-title">POINT</h2>
+      <h3 class="points-title">Nwors（ノワーズ）の3つの特徴</h3>
+      <ul class="point-list">
+        <li class="point-item">
+          <!-- <img src="img/1.png" alt="" class="point-img"> -->
+          <div class="point">
+            <h4 class="point-title point-title1">信頼性</h4>
+            <p class="point-text point-text1">弊社では「インフルエンサー」との信頼性を重視するため、必要に応じて売る上げの分かる管理画面を御用意しております。</p>
+          </div>
+        </li>
+        <li class="point-item">
+          <!-- <img src="img/1.png" alt="" class="point-img"> -->
+          <div class="point">
+            <h4 class="point-title point-title2">充実なサポート</h4>
+            <p class="point-text point-text2">マンツーマン担当制となっており投稿の準備やご不明点等いつでもサポートが受けられますので、初めての方でもご安心して始められます。</p>
+          </div>
+        </li>
+        <li class="point-item">
+          <!-- <img src="img/1.png" alt="" class="point-img"> -->
+          <div class="point">
+            <h4 class="point-title point-title3">満足のいく料金設定</h4>
+            <p class="point-text point-text3">弊社では出来るだけ高単価でご案内が出来るよう弊社の利益を少なくし、「インフルエンサー」を第一に考え満足のいく金額をご提供させて頂きます。</p>
+          </div>
+        </li>
       </ul>
-    </div>
-  </main>
-  <footer>
-    <h1>お問い合わせ</h1>
-    <div class="info">
-      <input type="text" placeholder="名前">
-      <input type="text" placeholder="メールアドレス">
-      <textarea placeholder="メッセージ" class="message"></textarea>
-    </div>
-    <div class="btn">
-      <button>送信</button>
-    </div>
+    </section>
+
+  <footer class="footer">
+    <small>Copyright Nwors</small>
   </footer>
-  <script src="js/main.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

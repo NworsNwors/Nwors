@@ -1,113 +1,344 @@
+html{
+  font-size: 62.5%;
+}
 body{
-  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: .05em;
+  color: #171717;
+}
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+section{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.section-title{
+  max-width: 1000px;
+  color: #282f35;
+  font-size: 6rem;
+  font-style: italic;
+  margin: 30px auto 50px;
   padding: 0;
+}
+.section-title::after{
+  content: "";
+  display: inline-block;
+  background-color: #282f35;
+  width: 200px;
+  height: 5px;
+  margin-left: 30px;
+  vertical-align: middle;
 }
 
+/* ヘッダー */
 header{
-  margin: 0;
-  padding: 0;
+  padding: 19px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  transform: .3s;
 }
-header h1{
-  margin: 0;
-  padding: 0 0 0 10px;
-  color: blue;
-  font-size: 60px;
+@keyframes Nwors{
+  0%{
+    letter-spacing: 3em;
+    opacity: 0;
+  }
+}
+.site-title{
+  font-size: 2.6rem;
+  color: #fff;
+  animation: Nwors 1.5s;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.nav-list{
+  display: flex;
+}
+.nav-item{
+  margin-left: 30px;
+}
+.nav-item:last-of-type{
+  margin-right: 0;
+}
+header a{
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  font-weight: bold;
+  font-style: italic;
+}
+header a:hover{
+  opacity: .7;
+  transition: .3s;
+}
+.burger-btn{
+  display: none;
+}
+
+/* ファーストビュー */
+.fv{
+  min-height: 453px;
+  max-height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+.fv img{
+  max-height: 800px;
+}
+
+/* コンセプト */
+.concept-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+/* サービス */
+.service{
+  padding-bottom: 20px;
+}
+.service-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.service-text{
+  line-height: 1.9;
   font-weight: bold;
 }
-header img{
-  width: 100%;
-  height: 500px;
+
+/* ポイント */
+#points{
+  padding: 20px 30px;
+  background-image:  url(../img/Nwors2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.points-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.point-list{
+  display: flex;
+}
+.point-list .point-item{
+  list-style: none; 
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.point-list li.show h4,.point-list li.show p{
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.point{
+  max-width: 455px;
+  min-height: 230px;
+  line-height: 1.9;
+  margin: 0 5px;
+  padding: 0 5px;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 8px;
+}
+.point-title{
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+.point-text{
+  line-height: 1.9;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 2s;
+  font-size: 1.5rem;
+}
+.point-title2{
+  transition: 2s;
+}
+.point-text2{
+  transition: 3s;
+}
+.point-title3{
+  transition: 3s;
+}
+.point-text3{
+  transition: 4s;
 }
 
-main{
-  padding: 0;
-  margin: 0;
-}
-.service h1{
-  margin: 0;
-  padding: 0 0 0 10px;
-  font-size: 40px;
-  color: white;
-  background: blue;
-}
-.service h2{
-  margin: 10px 0 0 0;
+
+/* フッター */
+.footer{
+  padding: 30px 0;
   text-align: center;
-  padding: 0;
-  color: black;
-}
-.service p{
-  margin: 10px 10px;
-  padding: 0;
-  color: black;
-  font-weight: 600;
-}
-.point h1{
-  margin: 0;
-  padding: 0 0 0 10px;
-  font-size: 40px;
-  color: white;
-  background: blue;
-}
-.point h2{
-  margin: 10px 0 0 0;
-  text-align: center;
-  padding: 0;
-  color: black;
-}
-.point ul{
-  list-style: none;
-  margin: 0;
-}
-.point li{
-  font-size: 19px;
-  font-weight: 900;
-  margin: 20px 0 0 0;
-  text-decoration: underline;
-}
-.point p{
-  margin: 0;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #282f35;
 }
 
-footer h1{
-  background: rgb(140, 148, 155);
-  text-align: center;
-}
-.info{
-  margin: 0 20px;
-}
-footer div{
-  text-align: center;
-}
-input{
-  width: 46.5%;  
-  height: 15px;
-}
-textarea{
-  width: 95%;
-  height: 100px;
-}
-.btn{
-  text-align: center;
-}
-@media (max-width: 700px){
-  header img{
+@media screen and (max-width:768px) {
+  .section-title{
+    padding: 0 4vw;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+  .section-title::after{
+    width: 70px;
+  }
+
+  /* ヘッダー */
+  header{
+    display: block;
+    height: 60px;
     width: 100%;
-    height: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #171717;
   }
-  .info{
-    margin: 0 20px;
+  /* header{
+    padding: 30px 4vw 0;
+  } */
+  .header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    background-color: #282f35;
   }
-  input{
-    margin: 5px 0 0 0;
-    width: 95%;  
-    height: 30px;
+  header nav.active{
+    opacity: 1;
+    visibility: visible;
   }
-  textarea{
-    margin: 5px 0 0 0;
-    width: 95%;
-    height: 100px;
-    font-size: 15px;
+  .nav-list{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-item{
+    margin: 0 0 30px;
+  }
+  .nav-item:last-of-type{
+    margin-right: 0;
+  }
+  header a{
+    text-decoration: none;
+  }
+  .burger-btn{
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .burger-btn div{
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .burger-btn div:nth-last-of-type(1){
+    transform: translate(-50%, -10px);
+  }
+  .burger-btn div:nth-last-of-type(3){
+    transform: translate(-50%, 10px);
+  }
+  .burger-btn.active div:nth-last-of-type(1){
+    transform: rotate(45deg) translate(-50%, 0);
+    transform-origin: 0 50%;
+  }
+  .burger-btn.active div:nth-last-of-type(2){
+    opacity: 0;
+  }
+  .burger-btn.active div:nth-last-of-type(3){
+    transform: rotate(-45deg)  translate(-50%, 0);
+    transform-origin: 0 50%;
+  }
+
+  /* コンセプト */
+  .concept-title{
+    font-size: 2.4rem;
+    margin-bottom: 32px;
+  }
+  
+
+  /* サービス */
+  .service-title{
+    font-size: 2.5rem;
+  }
+
+  /* ポイント */
+  .points-title{
+    font-size: 2.5rem;
+  }
+  .point-list{
+    flex-direction: column;
+  }
+  .point-list .point-item{
+    display: block;
+    padding: 0 4vw;
+    margin: 0 auto 10px;
+  }
+  .point{
+    display: block;
+    width: 100%;
+    max-height: 100px;
+    margin: 10px auto 0 auto;
+  }
+  .point-list .point-title{
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .point-list .point-text{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .point-title2{
+    transition: 1s;
+  }
+  .point-text2{
+    transition: 2s;
+  }
+  .point-title3{
+    transition: 1s;
+  }
+  .point-text3{
+    transition: 2s;
   }
 }
