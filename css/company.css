@@ -93,104 +93,53 @@ header a:hover{
   background-size: cover;
   background-position: center;
 }
+.main-copy{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 100px;
+  vertical-align: middle;
+  transform: translate(-50%,-50%);
+}
 .fv img{
   max-height: 800px;
 }
 
-/* コンセプト */
-.concept-title{
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 60px;
-  font-weight: bold;
-  line-height: 1.7;
-}
-
-/* サービス */
-.service{
-  padding-bottom: 20px;
-}
-.service-title{
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 60px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-.service-text{
-  line-height: 1.9;
-  font-weight: bold;
-}
-
-/* ポイント */
-#points{
-  padding: 20px 30px;
-  background-image:  url(../img/Nwors2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.points-title{
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 60px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-.point-list{
+/* コンパニー */
+.company-list{
   display: flex;
+  flex-direction: column;
+  border: none;
 }
-.point-list .point-item{
-  list-style: none; 
-  margin-bottom: 20px;
+.company-items{
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-top: solid;
+  border-right: solid;
+  border-left: solid;
 }
-.point-list li.show h4,.point-list li.show p{
-  transform: translate(0, 0);
-  opacity: 1;
+.company-items:last-of-type{
+  border-bottom: solid;
 }
-.point{
-  max-width: 455px;
-  min-height: 230px;
-  line-height: 1.9;
-  margin: 0 5px;
-  padding: 0 5px;
-  background-color: #fff;
-  opacity: 0.7;
-  border-radius: 8px;
-}
-.point-title{
-  text-align: center;
-  font-size: 2rem;
-  margin: 10px 0 20px 0;
-  font-weight: bold;
-  line-height: 1.7;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 1s;
-}
-.point-text{
-  line-height: 1.9;
-  font-weight: bold;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 2s;
+.company-item1{
+  /* display: block; */
+  width: 100%;
+  padding: 10px;
   font-size: 1.5rem;
+  border-right: solid;
 }
-.point-title2{
-  transition: 2s;
+.company-item2{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  /* border: solid; */
 }
-.point-text2{
-  transition: 3s;
+#company p{
+  margin-top: 5px;
 }
-.point-title3{
-  transition: 3s;
-}
-.point-text3{
-  transition: 4s;
-}
-
 
 /* フッター */
 .footer{
@@ -208,7 +157,7 @@ header a:hover{
     margin-bottom: 50px;
   }
   .section-title::after{
-    width: 70px;
+    width: 60px;
   }
 
   /* ヘッダー */
@@ -292,61 +241,53 @@ header a:hover{
   .fv{
     min-height: 500px;
   }
+  .main-copy{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    vertical-align: middle;
+    transform: translate(-50%,-50%);
+  }
   .fv img{
     min-height: 500px;
     background-size: cover;
     background-position: center;
   }
 
-  /* コンセプト */
-  .concept-title{
-    font-size: 2.4rem;
-    margin-bottom: 32px;
-  }
-  
-  /* サービス */
-  .service-title{
-    font-size: 2.5rem;
-  }
-
-  /* ポイント */
-  .points-title{
-    font-size: 2.5rem;
-  }
-  .point-list{
+  /* コンパニー */
+  .company-list{
+    display: flex;
     flex-direction: column;
   }
-  .point-list .point-item{
-    display: block;
-    padding: 0 4vw;
-    margin: 0 auto 10px;
+  .company-items{
+    width: 100%;
+    display: flex;
+    border-top: solid;
+    border-right: solid;
+    border-left: solid;
   }
-  .point{
+  .company-items:last-of-type{
+    border-bottom: solid;
+  }
+  .company-item1{
+    /* display: block; */
+    width: 80%;
+    font-size: 1.5rem;
+    border-right: solid;
+    vertical-align: middle;
+  }
+  .company-item2{
     display: block;
     width: 100%;
-    max-height: 100px;
-    margin: 10px auto 0 auto;
-  }
-  .point-list .point-title{
-    font-size: 2rem;
-    margin: 0 auto;
     padding: 10px;
-  }
-  .point-list .point-text{
     font-size: 1.5rem;
-    margin: 0 auto;
-    padding: 10px;
+    word-break: break-all;
   }
-  .point-title2{
-    transition: 1s;
-  }
-  .point-text2{
-    transition: 2s;
-  }
-  .point-title3{
-    transition: 1s;
-  }
-  .point-text3{
-    transition: 2s;
+  #company p{
+    margin-top: 5px;
+    font-size: 1.2rem;
   }
 }
