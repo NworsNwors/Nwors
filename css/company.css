@@ -152,7 +152,7 @@ header a:hover{
 
 @media screen and (max-width:768px) {
   .section-title{
-    padding: 0 4vw;
+    /* padding: 0 10px; */
     font-size: 3rem;
     margin-bottom: 50px;
   }
