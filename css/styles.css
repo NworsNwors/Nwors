@@ -93,6 +93,41 @@ header a:hover{
   background-size: cover;
   background-position: center;
 }
+.main-copy{
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 70px;
+  vertical-align: middle;
+  transform: translate(-50%,-50%);
+  opacity: .5;
+  white-space: nowrap;
+}
+/* .main-copy1{
+  position: absolute;
+  left: 55%;
+  top: 20%;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 80px;
+  vertical-align: middle;
+  transform: translate(-50%,-50%);
+  opacity: .5;
+}
+.main-copy2{
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 80px;
+  vertical-align: middle;
+  transform: translate(-50%,-50%);
+  opacity: .5;
+  white-space: nowrap;
+} */
 .fv img{
   max-height: 800px;
 }
@@ -291,6 +326,18 @@ header a:hover{
   /* ファーストビュー */
   .fv{
     min-height: 500px;
+  }
+  .main-copy{
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 45px;
+    vertical-align: middle;
+    transform: translate(-50%,-50%);
+    opacity: .5;
+    /* white-space: normal; */
   }
   .fv img{
     min-height: 500px;
